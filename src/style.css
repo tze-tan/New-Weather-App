@@ -1,5 +1,5 @@
 body {
-  background: rgb(4, 99, 6);
+  background-image: url ("./img/background-image.jpg");
 }
 
 .inner-container {
@@ -21,15 +21,6 @@ body {
   display: flex;
 }
 
-.search input {
-  color: #495057;
-  width: 80%;
-}
-
-.submit {
-  color: #0d3328;
-}
-
 .search-input,
 .submit {
   border-radius: 10px;
@@ -38,6 +29,18 @@ body {
   margin-bottom: 10px;
   font-weight: 400;
   line-height: 1;
+}
+
+.search input {
+  color: #495057;
+  width: 80%;
+  border: none;
+}
+
+.submit {
+  color: black;
+  background-color: orange;
+  border: none;
 }
 
 .city {
@@ -50,16 +53,6 @@ body {
   margin: 0;
 }
 
-p {
-  font-family: "Poppins", sans-serif;
-}
-
-.humidity,
-.windspeed {
-  font-weight: 600;
-  color: green;
-}
-
 .current-temperature {
   font-size: 30px;
   font-weight: bold;
@@ -70,6 +63,16 @@ p {
 .temperature-celcius {
   margin-top: 30px;
   font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.humidity,
+.windspeed {
+  font-weight: 600;
+  color: green;
 }
 
 .footer {
