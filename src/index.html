@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universal Weather App</title>
+    <link rel="stylesheet" href="style.css" class="stylesheet" />
+  </head>
+  <body>
+    <div class="inner-container">
+      <header>
+        <div class="search-component">
+          <form>
+            <input
+              type="test"
+              class="search-input"
+              id="search-input"
+              placeholder="Enter a city"
+            />
+            <input
+              type="submit"
+              id="submit"
+              class="submit"
+              value="Search"
+              autofocus="on"
+              required
+            />
+          </form>
+        </div>
+      </header>
+      <main>
+        <h1>Munich</h1>
+        <div class="main-container">
+          <p>
+            Tuesday, 09:33, light snow <br />
+            Humidity: <span id="humidity"> 15%</span> Windspeed:
+            <span id="windspeed"> 40km/h</span>
+          </p>
+          <p>🌨 -5°C</p>
+        </div>
+      </main>
+      <footer class="footer">
+        This project was coded by
+        <a href="https://github.com/tze-tan" target="_blank">Tze Yi Tan </a>,
+        open sourced on GitHub, hosted on Netlify.
+      </footer>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
