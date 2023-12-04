@@ -26,24 +26,35 @@ function replaceDescription(response) {
 
 function replaceDateTime(response) {
   let apiTime = response.data.time;
+
   let formattedDateTime = new Date(apiTime * 1000);
-  console.log(formattedDateTime);
 
   let hour = formattedDateTime.getHours();
-
   if (hour < 10) {
     hour = `0${hour}`;
   }
 
   let minutes = formattedDateTime.getMinutes();
-
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
 
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[formattedDateTime.getDay()];
+
   let time = document.querySelector("#time");
+  let dayInTheWeek = document.querySelector("#dayintheweek");
 
   time.innerHTML = `${hour}:${minutes}`;
+  dayInTheWeek.innerHTML = day;
 }
 
 function replaceTemperature(response) {
