@@ -5,31 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Universal Weather App</title>
     <link rel="stylesheet" href="./src/style.css" class="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="inner-container">
       <header>
-        <div class="search-component">
-          <form>
+        <div>
+          <form id="search-component">
             <input
-              type="test"
+              type="text"
               class="search-input"
               id="search-input"
               placeholder="Enter a city"
-            />
-            <input
-              type="submit"
-              id="submit"
-              class="submit"
-              value="Search"
               autofocus="on"
               required
             />
+            <input type="submit" id="submit" class="submit" value="Search" />
           </form>
         </div>
       </header>
       <main>
-        <h1>Munich</h1>
+        <h1 id="city">Munich</h1>
         <div class="main-container">
           <p>
             Tuesday, 09:33, light snow <br />
@@ -45,9 +41,12 @@
         open sourced on
         <a href="https://github.com/tze-tan/New-Weather-App" target="_blank"
           >GitHub</a
-        >, hosted on <a href="">Netlify</a>.
+        >, hosted on
+        <a href="https://tze-weather-app.netlify.app/" target="_blank"
+          >Netlify</a
+        >.
       </footer>
-      <script src=".src/script.js"></script>
+      <script src="./src/script.js"></script>
     </div>
   </body>
 </html>
