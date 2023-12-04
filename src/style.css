@@ -1,9 +1,11 @@
 body {
-  background-image: url ("./img/background-image.jpg");
+  background-image: url("../img/background-image.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .inner-container {
-  width: 50%;
+  width: 40%;
   background: white;
   padding: 30px 40px;
   border: none;
@@ -21,26 +23,30 @@ body {
   display: flex;
 }
 
-.search-input,
-.submit {
+.search-input {
+  color: #495057;
+  border-color: #be3632;
   border-radius: 10px;
   padding: 16px;
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 400;
   line-height: 1;
-}
-
-.search input {
-  color: #495057;
-  width: 80%;
-  border: none;
+  border-width: 1px;
+  width: 75%;
 }
 
 .submit {
-  color: black;
-  background-color: orange;
+  color: white;
+  background-color: #be3632;
   border: none;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 1;
+  width: 100px;
 }
 
 .city {
@@ -72,7 +78,7 @@ p {
 .humidity,
 .windspeed {
   font-weight: 600;
-  color: green;
+  color: #be3632;
 }
 
 .footer {
@@ -80,4 +86,9 @@ p {
   font-size: 12px;
   text-align: left;
   font-family: sans-serif;
+  color: rgba(175, 171, 171, 0.656);
+}
+
+a {
+  color: #be3632;
 }
