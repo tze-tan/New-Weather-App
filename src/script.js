@@ -1,25 +1,35 @@
-function handleSearchInput(event) {
-  event.preventDefault();
-  let cityName = document.querySelector("#city");
-  let searchInput = document.querySelector("#search-input");
-  cityName.innerHTML = searchInput.value;
+function hollisticSearch(city) {
   let apiKey = "4916caba061520co8b34c1aft75528fb";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${searchInput.value}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   axios.get(apiUrl).then(replaceDescription);
   axios.get(apiUrl).then(replaceTemperature);
   axios.get(apiUrl).then(replaceDateTime);
   axios.get(apiUrl).then(replaceImage);
 }
 
+hollisticSearch("Munich");
+
+let searchFormElement = document.querySelector("#search-component");
+searchFormElement.addEventListener("submit", handleSearchInput);
+
+function handleSearchInput(event) {
+  event.preventDefault();
+  let searchInput = document.querySelector("#search-input");
+  hollisticSearch(searchInput.value);
+}
+
 function replaceDescription(response) {
+  let apiCity = response.data.city;
   let apiWindSpeed = `${response.data.wind.speed}km/h`;
   let apiHumidity = `${response.data.temperature.humidity}%`;
   let apiDescription = response.data.condition.description;
 
+  let cityName = document.querySelector("#city");
   let windSpeed = document.querySelector("#windspeed");
   let humidity = document.querySelector("#humidity");
   let description = document.querySelector("#description");
 
+  cityName.innerHTML = apiCity;
   windSpeed.innerHTML = apiWindSpeed;
   humidity.innerHTML = apiHumidity;
   description.innerHTML = apiDescription;
@@ -71,6 +81,3 @@ function replaceImage(response) {
   image.innerHTML = `<img src="${response.data.condition.icon_url}" class="temp-image" />`;
   console.log(image.innerHTML);
 }
-
-let searchFormElement = document.querySelector("#search-component");
-searchFormElement.addEventListener("submit", handleSearchInput);

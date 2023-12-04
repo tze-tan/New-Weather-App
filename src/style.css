@@ -23,29 +23,31 @@ body {
   display: flex;
 }
 
-.search-input {
-  color: #495057;
-  border-color: #be3632;
+.search-input,
+.submit {
   border-radius: 10px;
   padding: 16px;
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 400;
   line-height: 1;
-  border-width: 1px;
+}
+
+.search-input {
+  color: #495057;
+  border-radius: 10px;
+  border: 1px solid #be3632;
   width: 75%;
+}
+
+.search-input:focus {
+  border: 1px solid #be3632;
 }
 
 .submit {
   color: white;
   background-color: #be3632;
   border: none;
-  border-radius: 10px;
-  padding: 16px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: 400;
-  line-height: 1;
   width: 100px;
 }
 
