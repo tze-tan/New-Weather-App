@@ -5,7 +5,7 @@ body {
 .inner-container {
   width: 50%;
   background: white;
-  padding: 30px 60px;
+  padding: 30px 40px;
   border: none;
   border-radius: 30px;
   margin: 0 auto;
@@ -17,10 +17,8 @@ body {
   justify-content: space-between;
 }
 
-.footer {
-  margin-top: 70px;
-  font-size: 12px;
-  text-align: center;
+.temperature-container {
+  display: flex;
 }
 
 .search input {
@@ -40,4 +38,43 @@ body {
   margin-bottom: 10px;
   font-weight: 400;
   line-height: 1;
+}
+
+.city {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.temp-image {
+  margin: 0;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.humidity,
+.windspeed {
+  font-weight: 600;
+  color: green;
+}
+
+.current-temperature {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px;
+}
+
+.temperature-celcius {
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer {
+  margin-top: 70px;
+  font-size: 12px;
+  text-align: left;
+  font-family: sans-serif;
 }

@@ -8,6 +8,7 @@ function handleSearchInput(event) {
   axios.get(apiUrl).then(replaceDescription);
   axios.get(apiUrl).then(replaceTemperature);
   axios.get(apiUrl).then(replaceDateTime);
+  axios.get(apiUrl).then(replaceImage);
 }
 
 function replaceDescription(response) {
@@ -62,7 +63,13 @@ function replaceTemperature(response) {
 
   let currentTemperature = document.querySelector("#current-temperature");
 
-  currentTemperature.innerHTML = `${apiTemperature}°C`;
+  currentTemperature.innerHTML = `${apiTemperature}`;
+}
+
+function replaceImage(response) {
+  let image = document.querySelector("#temp-image");
+  image.innerHTML = `<img src="${response.data.condition.icon_url}" class="temp-image" />`;
+  console.log(image.innerHTML);
 }
 
 let searchFormElement = document.querySelector("#search-component");
