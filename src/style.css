@@ -83,6 +83,18 @@ p {
   color: #be3632;
 }
 
+.weather-forecast-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.weather-forecast-day,
+.weather-forecast-temp {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
 .footer {
   margin-top: 70px;
   font-size: 12px;

@@ -81,3 +81,38 @@ function replaceImage(response) {
   image.innerHTML = `<img src="${response.data.condition.icon_url}" class="temp-image" />`;
   console.log(image.innerHTML);
 }
+
+/*function displayForecast() {
+  let HTML = "";
+
+  let days = ["Fri", "Sat", "Sun", "Mon", "Tue"];
+
+  days.forEach(function (day) {
+    HTML =
+      HTML +
+      ` <div class="weather-forecast-day">${day}</div>
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forecast-temp">
+              <strong>19°</strong>
+              15°
+            </div>`;
+
+    console.log(HTML);
+  });
+}*/
+
+/*let weatherForecast = document.querySelector("#weather-forecast");
+weatherForecast.innerHTML = `<div class="weather-forecast-day">Fri</div>
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forecast-temp">
+              <strong>19°</strong>
+              15°
+            </div>`;*/
+
+//displayForecast();
