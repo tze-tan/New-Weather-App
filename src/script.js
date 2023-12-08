@@ -101,8 +101,6 @@ function displayForecast() {
       15°
     </div>
   </div>`;
-
-    console.log(HTML);
   });
 
   let weatherForecast = document.querySelector("#weather-forecast-container");
@@ -110,3 +108,9 @@ function displayForecast() {
 }
 
 displayForecast();
+
+function getForecast(city) {
+  apiKey = "4916caba061520co8b34c1aft75528fb";
+  apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+  axios.get(apiUrl).then(displayForecast());
+}
