@@ -1,6 +1,6 @@
 body {
   background-image: url("../img/background-image.jpg");
-  background-size: 100%;
+  background-size: 50%;
 }
 
 .inner-container {
@@ -37,7 +37,7 @@ body {
   color: #495057;
   border-radius: 10px;
   border: 1px solid #be3632;
-  width: 75%;
+  width: 80%;
 }
 
 .search-input:focus {
@@ -59,18 +59,20 @@ body {
 
 .temp-image {
   margin: 0;
+  width: 100px;
 }
 
 .current-temperature {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
   margin-top: 30px;
 }
 
 .temperature-celcius {
-  margin-top: 30px;
+  margin-top: 40px;
   font-family: "Poppins", sans-serif;
+  margin-right: 40px;
 }
 
 p {
