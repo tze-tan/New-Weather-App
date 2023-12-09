@@ -89,6 +89,7 @@ p {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  flex-wrap: wrap;
 }
 
 .weather-forecast-day,
@@ -145,5 +146,9 @@ a {
 
   body {
     background-size: 100%;
+  }
+
+  .weather-forecast-icon {
+    width: 70px;
   }
 }
