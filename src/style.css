@@ -108,3 +108,11 @@ p {
 a {
   color: #be3632;
 }
+
+@media (max-width: 812px) {
+  .city {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
