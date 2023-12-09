@@ -118,24 +118,28 @@ a {
 
   .temp-image {
     margin: 0;
-    width: 30px;
+    width: 70px;
   }
 
   .current-temperature {
     font-size: 25px;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   .temperature-celcius {
-    margin-top: 25px;
+    margin-top: 15px;
     font-family: "Poppins", sans-serif;
-    margin-right: 30px;
   }
 
   p {
     font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 12px;
+  }
+
+  .weather-forecast-day,
+  .weather-forecast-temp {
+    font-size: 12px;
   }
 }
