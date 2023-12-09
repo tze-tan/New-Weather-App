@@ -1,17 +1,17 @@
 body {
   background-image: url("../img/background-image.jpg");
   background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 .inner-container {
-  width: 70%;
+  width: 60%;
   background: white;
   padding: 30px 40px;
   border: none;
   border-radius: 30px;
   margin: 0 auto;
   margin-top: 70px;
+  overflow: scroll;
 }
 
 .main-container {
