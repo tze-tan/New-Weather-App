@@ -72,7 +72,7 @@ body {
 .temperature-celcius {
   margin-top: 40px;
   font-family: "Poppins", sans-serif;
-  margin-right: 40px;
+  margin-right: 60px;
 }
 
 p {
@@ -112,7 +112,30 @@ a {
 @media (max-width: 812px) {
   .city {
     font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 10px;
+  }
+
+  .temp-image {
+    margin: 0;
+    width: 30px;
+  }
+
+  .current-temperature {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    margin-top: 30px;
+  }
+
+  .temperature-celcius {
+    margin-top: 25px;
+    font-family: "Poppins", sans-serif;
+    margin-right: 30px;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
   }
 }
