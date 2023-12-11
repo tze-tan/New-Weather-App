@@ -1,6 +1,6 @@
 body {
   background-image: url("../img/background-image.jpg");
-  background-size: cover;
+  background-size: 50%;
 }
 
 .inner-container {
@@ -141,6 +141,10 @@ a {
   .weather-forecast-day,
   .weather-forecast-temp {
     font-size: 12px;
+  }
+
+  body {
+    background-size: 100%;
   }
 
   .weather-forecast-icon {
