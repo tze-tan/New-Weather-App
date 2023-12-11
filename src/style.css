@@ -143,6 +143,10 @@ a {
     font-size: 12px;
   }
 
+  body {
+    background-size: 100%;
+  }
+
   .weather-forecast-icon {
     width: 70px;
   }
