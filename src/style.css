@@ -1,11 +1,11 @@
 body {
   background-image: url("../img/background-image.jpg");
-  background-size: 50%;
+  background-size: cover;
 }
 
 .inner-container {
   width: 60%;
-  background: rgba(255, 255, 255);
+  background: rgba(255, 255, 255, 0.95);
   padding: 30px 40px;
   border: none;
   border-radius: 30px;
@@ -144,7 +144,8 @@ a {
   }
 
   body {
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: none;
   }
 
   .weather-forecast-icon {
